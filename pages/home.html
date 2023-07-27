@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../lib/layui-v2.8.4/css/layui.css">
+    <script src="../lib/layui-v2.8.4/layui.js"></script>
+    <title>XD music</title>
+    <style>
+        .nav{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        function music_update(){
+            alert('将你的歌曲文件作为邮件的附件发送至我们的邮箱，附带作词人、作曲人、演唱者、编曲人姓名(网名)以及原创分轨文件')
+        }
+        function wrong(){
+            prompt('举报歌曲名')
+            prompt('歌手名')
+            prompt('简单叙述理由')
+            alert('提交成功')
+            alert('如您提交的内容属实，我们将会进行处理')
+        }
+    </script>
+    <ul class="layui-nav layui-bg-cyan nav">
+        <li class="layui-nav-item"><a href="about.html" >介绍</a> </li>
+        <li class="layui-nav-item"><a href="list.html">听音乐</a></li>
+        <li class="layui-nav-item">
+            <a href="javascript:;">更多</a>
+            <dl class="layui-nav-child">
+                <dd><a onclick="music_update()" href="mailto:2114099194@qq.com">发布歌曲</a></dd>
+                <dd><a onclick="wrong()" >举报歌曲</a> </dd>
+            </dl>
+        </li>
+    </ul>
+    <div style="text-align: center">
+        <h1>XD 音乐</h1>
+        <h2>XD music</h2>
+    </div>
+
+</body>
+</html>
